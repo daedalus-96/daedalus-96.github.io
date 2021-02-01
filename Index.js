@@ -331,7 +331,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,391.1,58.9);
 
 
 // stage content:
-(lib.index1 = function(mode,startPosition,loop) {
+(lib.index3 = function(mode,startPosition,loop) {
 if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 
 	// timeline functions:
@@ -350,9 +350,12 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 			window.open("https://instagram.com/quri.neshan?igshid=a36zadyunmep", "_blank");
 		}
 	}
+	this.frame_352 = function() {
+		this.gotoAndPlay(20);
+	}
 
 	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(363));
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(352).call(this.frame_352).wait(11));
 
 	// Button
 	this.Btn1 = new lib.Button();
