@@ -1,4 +1,3 @@
-
 <html>
 <head>
 <meta charset="UTF-8">
@@ -7,6 +6,9 @@
 <!-- write your code here -->
 <script src="libs/createjs-2015.11.26.min.js"></script>
 <script src="Index.js"></script>
+<script>
+// Global Scripts
+	this.gotoAndPlay(20);</script>
 <script>
 var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
 function init() {
@@ -34,7 +36,7 @@ function handleComplete(evt,comp) {
 	for(i=0; i<ssMetadata.length; i++) {
 		ss[ssMetadata[i].name] = new createjs.SpriteSheet( {"images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames} )
 	}
-	exportRoot = new lib.index1();
+	exportRoot = new lib.index3();
 	stage = new lib.Stage(canvas);
 	stage.enableMouseOver();	
 	//Registers the "tick" event listener.
